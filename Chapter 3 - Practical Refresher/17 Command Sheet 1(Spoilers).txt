@@ -1,0 +1,7 @@
+sudo netdiscover -i eth0 -r 10.2.0.0/24
+
+sudo nmap 10.2.0.200 -Pn -p-
+
+find /usr/share/nmap -name "s7*.nse"
+
+sudo nmap 10.2.0.200 -p 102 --script s7-info.nse 

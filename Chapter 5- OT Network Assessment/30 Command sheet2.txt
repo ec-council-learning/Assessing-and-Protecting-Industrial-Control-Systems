@@ -1,0 +1,7 @@
+sudo netdiscover -i eth0 -r 10.2.0.0/24
+
+sudo nmap 10.2.0.0/24 -sn -T2 --disable-arp-ping -oG - | awk '/Up$/{print $2}' > icmphosts.txt 
+
+cat icmphosts.txt
+
+sudo nmap -iL icmphosts.txt -sV -T2 -sT -p- -oN ICS_services.txt

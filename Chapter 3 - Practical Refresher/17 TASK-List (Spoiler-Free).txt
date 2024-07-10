@@ -1,0 +1,4 @@
+1. Perform an arp discovery using netdiscover to uncover an ICS on the network.
+2. Find open ports on the ICS using namp.
+3. Probe open ports that run industrial protocols with a suitable nmap script to extract information.
+4. Assess any other open ports.

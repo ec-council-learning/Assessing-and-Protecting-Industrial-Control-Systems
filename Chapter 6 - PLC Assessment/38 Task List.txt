@@ -1,0 +1,3 @@
+1. Confirm the open ports on this particular device using namp.
+2. Probe open ports that run industrial protocols with a suitable nmap script to extract information.
+3. Assess other open ports.
